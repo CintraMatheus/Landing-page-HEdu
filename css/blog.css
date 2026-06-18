@@ -1,0 +1,221 @@
+/* ── Banner ── */
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* ── Cards ── */
+.blog-container {
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: #1565c0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  padding: 20px 20px 12px;
+  text-align: center;
+}
+
+.card-header h3 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.card-body {
+  background-color: #ffffff;
+  margin: 0 16px;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+}
+
+.card-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+}
+
+.card-footer .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #90caf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-footer .avatar svg {
+  width: 22px;
+  height: 22px;
+  fill: #1565c0;
+}
+
+.card-footer span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ── Botões principais ── */
+.blog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 12px 48px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #0d47a1;
+}
+
+/* ── Overlay dos modais ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.aberto {
+  display: flex;
+}
+
+/* ── Modal ── */
+.modal {
+  background-color: #1565c0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Campos reutilizáveis ── */
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  outline: none;
+  resize: none;
+}
+
+.campo textarea {
+  border-radius: 16px;
+  min-height: 160px;
+}
+
+/* ── Lista do modal deletar ── */
+.delete-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.delete-item input {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  pointer-events: none;
+}
+
+.btn-lixeira {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e53935;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.btn-lixeira:hover {
+  background-color: #b71c1c;
+}
+
+/* ── Botões do modal ── */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.btn-modal {
+  padding: 11px 36px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1976d2;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-modal:hover {
+  background-color: #0d47a1;
+}
