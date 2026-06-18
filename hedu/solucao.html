@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hedu - Orientação de Carreira</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <style>
@@ -16,95 +23,115 @@
             --fundo: #f2f5f6;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background-color: var(--fundo); }
-        header {
-            background-color: var(--azul-header);
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .logo-placeholder {
-            background-color: #1a2a3a;
-            color: white;
-            padding: 5px 10px;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 4px;
+        body {
+            background-color: var(--fundo);
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 30px;
-            font-weight: 700;
-            font-size: 16px;
-        }
         .hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding: 0 0 0 8%;
             min-height: calc(100vh - 70px);
             overflow: hidden;
-            position: relative; 
+            position: relative;
         }
-        .hero-text { 
-            display: flex; 
-            flex-direction: column; 
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             padding-right: 40px;
-            z-index: 2; 
+            z-index: 2;
         }
 
-        .hero-text h1 { color: var(--azul-escuro); font-size: 56px; line-height: 1.1; margin-bottom: 20px; }
-        .hero-text p { color: var(--azul-texto); font-size: 18px; margin-bottom: 30px; line-height: 1.5; }
-        
-        .hero-image img { 
-            position: absolute; 
-            width: 50vw;       
-            max-width: none;    
-            right: -5vw;       
-            bottom: -3vh;      
-            z-index: 1;         
+        .hero-text h1 {
+            color: var(--azul-escuro);
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 20px;
         }
 
-        .features { display: flex; gap: 20px; color: var(--azul-escuro); font-weight: 700; }
-        .feature-item { display: flex; align-items: center; gap: 8px; }
+        .hero-text p {
+            color: var(--azul-texto);
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .hero-image img {
+            position: absolute;
+            width: 50vw;
+            max-width: none;
+            right: -5vw;
+            bottom: -3vh;
+            z-index: 1;
+        }
+
+        .features {
+            display: flex;
+            gap: 20px;
+            color: var(--azul-escuro);
+            font-weight: 700;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="#">
-                <img src="Logo.svg" alt="Logo He du" style="height: 40px;">
-            </a>
-        </div>
-        <nav>
-            <a href="#">Sobre</a>
-            <a href="#">Solução</a>
-            <a href="#">Blog</a>
-        </nav>
-    </header>
+
+    <div id="header-placeholder"></div>
 
     <main class="hero">
         <div class="hero-text">
-            <h1>Orientação clara<br>para sua<br>transição</h1>
-            <p>A Hedu é uma bússola digital para quem sabe que precisa evoluir 
-            profissionalmente, mas não tem certeza de qual caminho seguir. Oferecemos informações claras e objetivas sobre diferentes áreas de carreira, com uma navegação intuitiva e comunicação acolhedora.
-            
+            <h1>
+                Orientação clara<br>
+                para sua<br>
+                transição
+            </h1>
+
+            <p>
+                A Hedu é uma bússola digital para quem sabe que precisa evoluir
+                profissionalmente, mas não tem certeza de qual caminho seguir.
+                Oferecemos informações claras e objetivas sobre diferentes áreas
+                de carreira, com uma navegação intuitiva e comunicação acolhedora.
+            </p>
+
             <div class="features">
-                <div class="feature-item"><i class="ph ph-lightbulb"></i> <span>Clareza</span></div>
-                <div class="feature-item"><i class="ph ph-users-three"></i> <span>Acolhimento</span></div>
-                <div class="feature-item"><i class="ph ph-map-pin"></i> <span>Direção</span></div>
+                <div class="feature-item">
+                    <i class="ph ph-lightbulb"></i>
+                    <span>Clareza</span>
+                </div>
+
+                <div class="feature-item">
+                    <i class="ph ph-users-three"></i>
+                    <span>Acolhimento</span>
+                </div>
+
+                <div class="feature-item">
+                    <i class="ph ph-map-pin"></i>
+                    <span>Direção</span>
+                </div>
             </div>
         </div>
 
         <div class="hero-image">
-            <img src="img.bussola.svg" alt="Bússola Hedu">
+            <img src="/img/bussola.svg" alt="Bússola Hedu">
         </div>
     </main>
+
+    <script src="/js/loadHeader.js"></script>
+
 </body>
 </html>
