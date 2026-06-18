@@ -1,5 +1,8 @@
 const API_BASE_URL = "https://blog-api.seedabit.org.br/api"
 
+const API_KEY = "teste";
+//const ADMIN_KEY = "sua-admin-key-aqui";
+
 async function request(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;
 
@@ -7,6 +10,8 @@ async function request(endpoint, options = {}) {
     const response = await fetch(url, {
       headers: {
         "Content-Type": "application/json",
+        "x-api-key": API_KEY,
+        //"x-admin-key": ADMIN_KEY,
         ...options.headers,
       },
       ...options,
