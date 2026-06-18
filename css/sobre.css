@@ -11,24 +11,13 @@ body{
 
 /* HEADER */
 
-header{
-    background:#005eae;
-    height:65px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:0 30px;
+.banner {
+  width: 100%;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-}
-
-.logo img{
-    height:60px;
+.banner img {
+  width: 100%;
+  display: block;
 }
 
 nav{
