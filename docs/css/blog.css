@@ -157,6 +157,12 @@
 }
 
 /* ── Lista do modal deletar ── */
+#lista-deletar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .delete-item {
   display: flex;
   align-items: center;
