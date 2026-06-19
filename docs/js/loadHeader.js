@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <header class="site-header">
       <div class="header-logo">
         <a href="./index.html">
-          <img src="/img/logoHEdu.png" alt="HEdu Logo" />
+          <img src="img/logoHEdu.png" alt="HEdu Logo" />
         </a>
       </div>
       <nav>
