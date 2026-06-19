@@ -1,30 +1,68 @@
-    .site-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 40px;
-      background-color: #1565c0;
-    }
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background-color: #1565c0;
+}
 
-    .site-header .header-logo img {
-      height: 48px;
-      width: auto;
-    }
+.site-header .header-logo img {
+  height: 48px;
+  width: auto;
+}
 
-    .site-header nav {
-      display: flex;
-      gap: 40px;
-    }
+.site-header nav {
+  display: flex;
+  gap: 40px;
+}
 
-    .site-header nav a {
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 32px;
-      font-weight: 600;
-      font-family: 'Poppins', sans-serif;
-      transition: opacity 0.2s;
-    }
+.site-header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 0.2s;
+}
 
-    .site-header nav a:hover {
-      opacity: 0.8;
-    }
+.site-header nav a:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .site-header {
+    padding: 12px 24px;
+  }
+
+  .site-header nav {
+    gap: 24px;
+  }
+
+  .site-header nav a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .site-header .header-logo img {
+    height: 40px;
+  }
+
+  .site-header nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-header nav a {
+    font-size: 16px;
+  }
+}
