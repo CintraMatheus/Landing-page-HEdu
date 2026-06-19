@@ -123,4 +123,5 @@ docs/
 Caio Santos: https://github.com/caiovsantos-ctrl  
 João Marcelo: https://github.com/JoaoM11  
 Matheus Cintra: https://github.com/CintraMatheus  
-Pedro Dourado: https://github.com/PedroDourado352
+Pedro Dourado: https://github.com/PedroDourado352  
+Sameque kadmiel: https://github.com/SamequeK
