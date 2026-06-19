@@ -225,3 +225,70 @@
 .btn-modal:hover {
   background-color: #0d47a1;
 }
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-actions {
+    gap: 40px;
+  }
+
+  .modal {
+    max-width: 90%;
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-container {
+    margin: 32px auto;
+    padding: 0 16px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .blog-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 0;
+  }
+
+  .modal {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-modal {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .delete-item {
+    gap: 8px;
+  }
+
+  .btn-lixeira {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}

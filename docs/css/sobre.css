@@ -40,12 +40,10 @@ nav a:hover{
 .hero{
     max-width:1200px;
     margin:40px;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap:60px;
-
     padding:0 20px;
 }
 
@@ -74,11 +72,11 @@ nav a:hover{
     border-radius:12px;
     margin-top:20px;
 }
+
 h3{
     font-size:32px;
     color:#005eae;
     margin-bottom:10px;
-
 }
 
 .hero-image{
@@ -90,6 +88,7 @@ h3{
     border-radius:20px;
     object-fit:cover;
 }
+
 /* CONTATO */
 
 .contatos {
@@ -104,7 +103,7 @@ h3{
     align-items: center;
     gap: 10px;
     color: #063472;
-    font-size: 20x;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -138,9 +137,7 @@ h3{
 .imagem-roadmap {
     position: absolute;
     right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    top: 0;
+    top: -250px;
     width: 300px;
 }
 
@@ -153,13 +150,9 @@ h3{
 .card{
     background:#005eae;
     color:white;
-
     border-radius:12px;
-
     padding:20px;
-
     min-height:160px;
-
     transition:.3s;
 }
 
@@ -182,19 +175,29 @@ h3{
 /* RESPONSIVO */
 
 @media(max-width:900px){
-
     .hero{
         flex-direction:column;
         text-align:center;
     }
 
+    .quadrado{
+        width:100%;
+        height:auto;
+        padding:16px;
+    }
+
     .cards{
         grid-template-columns:repeat(2,1fr);
+        margin:30px 20px;
+    }
+
+    /* esconde a imagem que sobrepõe em telas menores */
+    .imagem-roadmap {
+        display: none;
     }
 }
 
 @media(max-width:600px){
-
     header{
         flex-direction:column;
         height:auto;
@@ -210,7 +213,19 @@ h3{
         font-size:32px;
     }
 
+    .hero{
+        margin:20px;
+        padding:0 10px;
+    }
+
     .cards{
         grid-template-columns:1fr;
+        margin:20px 16px;
+    }
+
+    .contatos{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
     }
 }
